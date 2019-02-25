@@ -1,0 +1,5 @@
+This file contains a to do list for this project
+
+TODO Center text in textview
+TODO Remove textview outline
+TODO Make use of resources to bind strings etc
