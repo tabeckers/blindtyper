@@ -1,0 +1,15 @@
+C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\obj\Debug\BlindTyper.csprojResolveAssemblyReference.cache
+C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\obj\Debug\MainWindow.g.cs
+C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\obj\Debug\App.g.cs
+C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\obj\Debug\BlindTyper_MarkupCompile.cache
+C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\obj\Debug\BlindTyper_MarkupCompile.lref
+C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\bin\Debug\BlindTyper.exe.config
+C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\bin\Debug\BlindTyper.exe
+C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\bin\Debug\BlindTyper.pdb
+C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\obj\Debug\MainWindow.baml
+C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\obj\Debug\BlindTyper.g.resources
+C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\obj\Debug\BlindTyper.Properties.Resources.resources
+C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\obj\Debug\BlindTyper.csproj.GenerateResource.cache
+C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\obj\Debug\BlindTyper.csproj.CoreCompileInputs.cache
+C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\obj\Debug\BlindTyper.exe
+C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\obj\Debug\BlindTyper.pdb
