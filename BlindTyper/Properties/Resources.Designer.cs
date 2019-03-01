@@ -22,7 +22,7 @@ namespace BlindTyper.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace BlindTyper.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BlindTyper.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace BlindTyper.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,11 +61,74 @@ namespace BlindTyper.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Your accuracy is .
+        /// </summary>
+        public static string TEXT_Accuracy_part1 {
+            get {
+                return ResourceManager.GetString("TEXT_Accuracy_part1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to %!.
+        /// </summary>
+        public static string TEXT_Accuracy_part2 {
+            get {
+                return ResourceManager.GetString("TEXT_Accuracy_part2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You are done!.
+        /// </summary>
+        public static string TEXT_FinishMessage {
+            get {
+                return ResourceManager.GetString("TEXT_FinishMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  / .
+        /// </summary>
+        public static string TEXT_Score_mid {
+            get {
+                return ResourceManager.GetString("TEXT_Score_mid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BlindTyper.
+        /// </summary>
+        public static string UI_AppTitle {
+            get {
+                return ResourceManager.GetString("UI_AppTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Import file.
+        /// </summary>
+        public static string UI_ButtonImportFileText {
+            get {
+                return ResourceManager.GetString("UI_ButtonImportFileText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Press any key to continue....
         /// </summary>
-        internal static string STRING_PressAnyKey {
+        public static string UI_LabelPressAnyKeyText {
             get {
-                return ResourceManager.GetString("STRING_PressAnyKey", resourceCulture);
+                return ResourceManager.GetString("UI_LabelPressAnyKeyText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is removed in code..
+        /// </summary>
+        public static string UI_RichTextBoxDefaultText {
+            get {
+                return ResourceManager.GetString("UI_RichTextBoxDefaultText", resourceCulture);
             }
         }
     }

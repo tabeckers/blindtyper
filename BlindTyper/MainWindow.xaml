@@ -4,13 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BlindTyper"
+        xmlns:properties="clr-namespace:BlindTyper.Properties"
         mc:Ignorable="d"
-        Title="Blind Typer" Height="450" Width="800" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" AllowsTransparency="True" WindowStyle="None">
+        Title="{x:Static properties:Resources.UI_AppTitle}" Height="450" Width="800" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" AllowsTransparency="True" WindowStyle="None">
 
     <Grid>
-        <Button x:Name="buttonImportFile" Content="Import file" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="300" Height="80" Click="ButtonImportFile_Click" FontFamily="Century Gothic" FontSize="30"/>
+        <Button x:Name="buttonImportFile" Content="{x:Static properties:Resources.UI_ButtonImportFileText}" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="300" Height="80" Click="ButtonImportFile_Click" FontFamily="Century Gothic" FontSize="30"/>
         <Label x:Name="labelScore" Content="Score: 0/100" Margin="130,55,130,355" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Century Gothic" FontSize="20"/>
-        <Label x:Name="labelBottom" Content="Press any key to continue..." Margin="246,306,246,0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Century Gothic" FontSize="14"/>
+        <Label x:Name="labelBottom" Content="{x:Static properties:Resources.UI_LabelPressAnyKeyText}" Margin="246,306,246,0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Century Gothic" FontSize="14"/>
         <RichTextBox 
             x:Name="textBoxTyping" 
             Margin="0" 
@@ -26,7 +27,7 @@
             Height="200">
             <FlowDocument PagePadding="0" AllowDrop="True">
                 <Paragraph>
-                    <Run Text="RichTextBox"/>
+                    <Run Text="This text will be replaced by code."/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>

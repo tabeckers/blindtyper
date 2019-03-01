@@ -117,7 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="STRING_PressAnyKey" xml:space="preserve">
+  <data name="TEXT_Accuracy_part1" xml:space="preserve">
+    <value>Your accuracy is </value>
+  </data>
+  <data name="TEXT_Accuracy_part2" xml:space="preserve">
+    <value>%!</value>
+  </data>
+  <data name="TEXT_FinishMessage" xml:space="preserve">
+    <value>You are done!</value>
+  </data>
+  <data name="TEXT_Score_mid" xml:space="preserve">
+    <value> / </value>
+  </data>
+  <data name="UI_AppTitle" xml:space="preserve">
+    <value>BlindTyper</value>
+  </data>
+  <data name="UI_ButtonImportFileText" xml:space="preserve">
+    <value>Import file</value>
+  </data>
+  <data name="UI_LabelPressAnyKeyText" xml:space="preserve">
     <value>Press any key to continue...</value>
+  </data>
+  <data name="UI_RichTextBoxDefaultText" xml:space="preserve">
+    <value>This is removed in code.</value>
   </data>
 </root>

@@ -84,7 +84,7 @@ namespace BlindTyper.TypeControl {
             sentenceIndex++;
             charIndex = 0;
 
-            labelScore.Content = charIndex + " / " + sentence.Length;
+            labelScore.Content = charIndex + Properties.Resources.TEXT_Score_mid + sentence.Length;
         }
 
         /// <summary>
@@ -102,7 +102,7 @@ namespace BlindTyper.TypeControl {
             if (c == currentDesired) {
                 charIndex++;
                 SetTextGreenUpToIndex(charIndex);
-                labelScore.Content = charIndex + " / " + sentence.Length;
+                labelScore.Content = charIndex + Properties.Resources.TEXT_Score_mid + sentence.Length;
                 charsSuccesful++;
             } else {
                 charsFailed++;
@@ -132,7 +132,7 @@ namespace BlindTyper.TypeControl {
         /// </summary>
         private void OnFinishedTypingText() {
             double accuracy = 1 - ((double)charsFailed / (double)(charsFailed + charsSuccesful));
-            labelScore.Content = "Your accuracy is " + Math.Round(100 * accuracy) + "%!";
+            labelScore.Content = Properties.Resources.TEXT_Accuracy_part1 + Math.Round(100 * accuracy) + Properties.Resources.TEXT_Accuracy_part2;
             MainWindow.GlobalMainWindow.ChangeProgramState(ProgramState.finishedTyping);
         }
 
