@@ -59,8 +59,8 @@
     <Compile Include="Strings.cs" />
     <Compile Include="TypeControl\KeyboardHandler.cs" />
     <Compile Include="TypeControl\Typer.cs" />
+    <Compile Include="Utility.cs" />
     <Compile Include="Visual\RichTextBoxExtensions.cs" />
-    <Compile Include="Visual\VisualConstants.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

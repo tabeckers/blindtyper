@@ -96,7 +96,7 @@ namespace BlindTyper {
                     labelBottom.Visibility = Visibility.Visible;
 
                     textBoxTyping.Clear();
-                    textBoxTyping.AppendText(StringConstants.MessageFinishedTyping, VisualConstants.ColorSucceed);
+                    textBoxTyping.AppendText(StringConstants.MessageFinishedTyping, Utility.GetColorFromKey("colorTextCorrect"));
                     keyboardHandler.SetInFinishedTypingState();
                     break;
 

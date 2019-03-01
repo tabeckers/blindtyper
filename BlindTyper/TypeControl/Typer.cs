@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
 using BlindTyper.Visual;
 
 namespace BlindTyper.TypeControl {
@@ -78,7 +79,7 @@ namespace BlindTyper.TypeControl {
             sentenceCharArray = sentence.ToCharArray();
 
             textBoxTyping.Clear();
-            textBoxTyping.AppendText(sentence, VisualConstants.ColorFailed);
+            textBoxTyping.AppendText(sentence, Utility.GetColorFromKey("colorTextIncorrect"));
 
             sentenceIndex++;
             charIndex = 0;
@@ -150,8 +151,8 @@ namespace BlindTyper.TypeControl {
             string red = sentence.Substring(index, sentence.Length - (index));
 
             textBoxTyping.Clear();
-            textBoxTyping.AppendText(green, VisualConstants.ColorSucceed, VisualConstants.ColorBackgroundSucceed);
-            textBoxTyping.AppendText(red, VisualConstants.ColorFailed, VisualConstants.ColorBackgroundFailed);
+            textBoxTyping.AppendText(green, Utility.GetColorFromKey("colorTextCorrect"), Utility.GetColorFromKey("colorTextCorrectBackground"));
+            textBoxTyping.AppendText(red, Utility.GetColorFromKey("colorTextIncorrect"), Utility.GetColorFromKey("colorTextIncorrectBackground"));
         }
 
     }

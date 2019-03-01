@@ -6,11 +6,24 @@
         xmlns:local="clr-namespace:BlindTyper"
         mc:Ignorable="d"
         Title="Blind Typer" Height="450" Width="800" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" AllowsTransparency="True" WindowStyle="None">
+
     <Grid>
         <Button x:Name="buttonImportFile" Content="Import file" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="300" Height="80" Click="ButtonImportFile_Click" FontFamily="Century Gothic" FontSize="30"/>
         <Label x:Name="labelScore" Content="Score: 0/100" Margin="130,55,130,355" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Century Gothic" FontSize="20"/>
         <Label x:Name="labelBottom" Content="Press any key to continue..." Margin="246,306,246,0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Century Gothic" FontSize="14"/>
-        <RichTextBox x:Name="textBoxTyping" Margin="0" Opacity="0.995" FontFamily="Century Gothic" FontSize="40" FontWeight="Bold" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Block.TextAlignment="Center" Width="540" Height="200">
+        <RichTextBox 
+            x:Name="textBoxTyping" 
+            Margin="0" 
+            Opacity="0.995" 
+            FontFamily="Century Gothic" 
+            FontSize="40" 
+            FontWeight="Bold" 
+            IsReadOnly="True" 
+            HorizontalContentAlignment="Center" 
+            VerticalContentAlignment="Center" 
+            Block.TextAlignment="Center" 
+            Width="540" 
+            Height="200">
             <FlowDocument PagePadding="0" AllowDrop="True">
                 <Paragraph>
                     <Run Text="RichTextBox"/>
@@ -22,3 +35,4 @@
         <Label Content="BlindTyper" HorizontalAlignment="Left" VerticalAlignment="Top" Width="327" Height="26" FontFamily="Century Gothic" VerticalContentAlignment="Center" FontSize="14" Padding="5,0,0,0" FontWeight="Bold" MouseDown="Topbar_MouseDown"/>
     </Grid>
 </Window>
+  
