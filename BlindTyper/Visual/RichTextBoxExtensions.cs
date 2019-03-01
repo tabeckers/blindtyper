@@ -33,6 +33,7 @@ namespace BlindTyper.Visual {
             };
             range.ApplyPropertyValue(TextElement.ForegroundProperty, new SolidColorBrush(color));
             range.ApplyPropertyValue(TextElement.BackgroundProperty, new SolidColorBrush(colorBackground));
+            box.VerticalContentAlignment = System.Windows.VerticalAlignment.Center;
         }
 
         /// <summary>
