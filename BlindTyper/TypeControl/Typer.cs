@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
 using BlindTyper.Visual;
 
 namespace BlindTyper.TypeControl {
@@ -78,12 +79,12 @@ namespace BlindTyper.TypeControl {
             sentenceCharArray = sentence.ToCharArray();
 
             textBoxTyping.Clear();
-            textBoxTyping.AppendText(sentence, VisualConstants.ColorFailed);
+            textBoxTyping.AppendText(sentence, Utility.GetColorFromKey("colorTextIncorrect"));
 
             sentenceIndex++;
             charIndex = 0;
 
-            labelScore.Content = charIndex + " / " + sentence.Length;
+            labelScore.Content = charIndex + Properties.Resources.TEXT_Score_mid + sentence.Length;
         }
 
         /// <summary>
@@ -101,7 +102,7 @@ namespace BlindTyper.TypeControl {
             if (c == currentDesired) {
                 charIndex++;
                 SetTextGreenUpToIndex(charIndex);
-                labelScore.Content = charIndex + " / " + sentence.Length;
+                labelScore.Content = charIndex + Properties.Resources.TEXT_Score_mid + sentence.Length;
                 charsSuccesful++;
             } else {
                 charsFailed++;
@@ -131,7 +132,7 @@ namespace BlindTyper.TypeControl {
         /// </summary>
         private void OnFinishedTypingText() {
             double accuracy = 1 - ((double)charsFailed / (double)(charsFailed + charsSuccesful));
-            labelScore.Content = "Your accuracy is " + Math.Round(100 * accuracy) + "%!";
+            labelScore.Content = Properties.Resources.TEXT_Accuracy_part1 + Math.Round(100 * accuracy) + Properties.Resources.TEXT_Accuracy_part2;
             MainWindow.GlobalMainWindow.ChangeProgramState(ProgramState.finishedTyping);
         }
 
@@ -150,8 +151,8 @@ namespace BlindTyper.TypeControl {
             string red = sentence.Substring(index, sentence.Length - (index));
 
             textBoxTyping.Clear();
-            textBoxTyping.AppendText(green, VisualConstants.ColorSucceed, VisualConstants.ColorBackgroundSucceed);
-            textBoxTyping.AppendText(red, VisualConstants.ColorFailed, VisualConstants.ColorBackgroundFailed);
+            textBoxTyping.AppendText(green, Utility.GetColorFromKey("colorTextCorrect"), Utility.GetColorFromKey("colorTextCorrectBackground"));
+            textBoxTyping.AppendText(red, Utility.GetColorFromKey("colorTextIncorrect"), Utility.GetColorFromKey("colorTextIncorrectBackground"));
         }
 
     }

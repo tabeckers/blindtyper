@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:BlindTyper"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <SolidColorBrush x:Key="colorTextUntouched" Color="Black"></SolidColorBrush>
+        <SolidColorBrush x:Key="colorTextCorrect" Color="#00ff00"></SolidColorBrush>
+        <SolidColorBrush x:Key="colorTextIncorrect" Color="#ff0000"></SolidColorBrush>
+        <SolidColorBrush x:Key="colorTextCorrectBackground" Color="#12000000"></SolidColorBrush>
+        <SolidColorBrush x:Key="colorTextIncorrectBackground" Color="#00ffffff"></SolidColorBrush>
+        <SolidColorBrush x:Key="colorTransparent" Color="Transparent"></SolidColorBrush>
     </Application.Resources>
 </Application>

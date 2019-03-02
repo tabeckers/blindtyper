@@ -13,3 +13,4 @@ C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\obj\Debug\BlindTyper.csproj.G
 C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\obj\Debug\BlindTyper.csproj.CoreCompileInputs.cache
 C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\obj\Debug\BlindTyper.exe
 C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\obj\Debug\BlindTyper.pdb
+C:\Users\thoma\Visual Studio\BlindTyper\BlindTyper\obj\Debug\App.baml
