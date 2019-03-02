@@ -14,20 +14,19 @@
         <Label x:Name="labelBottom" Content="{x:Static properties:Resources.UI_LabelPressAnyKeyText}" Margin="246,306,246,0" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Century Gothic" FontSize="14"/>
         <RichTextBox 
             x:Name="textBoxTyping" 
-            Margin="0" 
-            Opacity="0.995" 
+            Opacity="1" 
             FontFamily="Century Gothic" 
             FontSize="40" 
             FontWeight="Bold" 
             IsReadOnly="True" 
-            HorizontalContentAlignment="Center" 
-            VerticalContentAlignment="Center" 
-            Block.TextAlignment="Center" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center"
+            Block.TextAlignment="Center"
             Width="540" 
             Height="200">
-            <FlowDocument PagePadding="0" AllowDrop="True">
+            <FlowDocument>
                 <Paragraph>
-                    <Run Text="This text will be replaced by code."/>
+                    Text.
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
@@ -36,4 +35,10 @@
         <Label Content="BlindTyper" HorizontalAlignment="Left" VerticalAlignment="Top" Width="327" Height="26" FontFamily="Century Gothic" VerticalContentAlignment="Center" FontSize="14" Padding="5,0,0,0" FontWeight="Bold" MouseDown="Topbar_MouseDown"/>
     </Grid>
 </Window>
-  
+<!--
+<Paragraph>
+    <Run
+                        BaselineAlignment="Center"
+                        Text="This text will be replaced by code."/>
+</Paragraph>
+    -->
